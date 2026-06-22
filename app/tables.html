@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tablas de Bootstrap</title>
+
+  <link rel="shortcut icon" href="assets/img/fotonat.jpeg" type="image/x-icon">
+
+  <!-- SEO Tags -->
+  <meta name="author" content="Natalia Peña Suarez">
+  <meta name="description" content="Curriculum Vitae de Natalia Peña Suarez, estudiante de desarrollo de software">
+  <meta name="keywords" content="curriculum, desarrollo web, software, HTML, CSS">
+
+  <!-- Optimization -->
+  <meta name="theme-color" content="#000000">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!--Bootstrap CSS CDN-->
+  <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!--Bootstrap CSS local-->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+      <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-person-circle"></i> Natalia Peña
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCV"
+          aria-controls="navbarCV" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCV">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">
+                <i class="bi bi-house-door"></i> Inicio
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">
+                <i class="bi bi-person"></i> Sobre mí
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">
+                <i class="bi bi-lightning"></i> Habilidades
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#estudios">
+                <i class="bi bi-mortarboard"></i> Estudios
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">
+                <i class="bi bi-folder"></i> Proyectos
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">
+                <i class="bi bi-envelope"></i> Contacto
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container mt-4">
+
+    <h2 class="text-center mb-4">Información de Personas</h2>
+
+    <div class="table-responsive">
+
+      <table class="table table-hover table-striped table-bordered shadow-lg text-center align-middle">
+
+        <thead class="table-primary">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>País</th>
+            <th>Sexo</th>
+            <th>Propiedades</th>
+            <th>Hijos</th>
+            <th>Mascotas</th>
+            <th>Automóvil</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td>Ana</td>
+            <td>Robledo</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>USA</td>
+            <td>Femenino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>María</td>
+            <td>López</td>
+            <td>20</td>
+            <td>Medellín</td>
+            <td>Colombia</td>
+            <td>Femenino</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Isaac</td>
+            <td>Miranda</td>
+            <td>33</td>
+            <td>Bogotá</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Juan</td>
+            <td>García</td>
+            <td>26</td>
+            <td>Cali</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Roberto</td>
+            <td>Marín</td>
+            <td>40</td>
+            <td>Tunja</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No </td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Iván</td>
+            <td>Luna</td>
+            <td>28</td>
+            <td>París</td>
+            <td>Francia</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Sofía</td>
+            <td>Torres</td>
+            <td>22</td>
+            <td>Cartagena</td>
+            <td>Colombia</td>
+            <td>Femenino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Camilo</td>
+            <td>Ruiz</td>
+            <td>31</td>
+            <td>Barranquilla</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>Valentina</td>
+            <td>Rojas</td>
+            <td>24</td>
+            <td>Pereira</td>
+            <td>Colombia</td>
+            <td>Femenino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>10 </td>
+            <td>Daniel</td>
+            <td>Castro</td>
+            <td>29</td>
+            <td>Manizales</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>11 </td>
+            <td>Natalia</td>
+            <td>Peña</td>
+            <td>28</td>
+            <td>Medellín</td>
+            <td>Colombia</td>
+            <td>Femenino</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>14</td>
+            <td>Felipe</td>
+            <td>Herrera</td>
+            <td>36</td>
+            <td>Buenos Aires</td>
+            <td>Argentina</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>15</td>
+            <td>Paula</td>
+            <td>Gómez</td>
+            <td>30</td>
+            <td>Santiago</td>
+            <td>Chile</td>
+            <td>Femenino</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td>16</td>
+            <td>Jorge</td>
+            <td>Ramírez</td>
+            <td>45</td>
+            <td>Montería</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>17</td>
+            <td>Luisa</td>
+            <td>Fernández</td>
+            <td>21</td>
+            <td>Santa Marta</td>
+            <td>Colombia</td>
+            <td>Femenino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td>18</td>
+            <td>Mateo</td>
+            <td>Silva</td>
+            <td>34</td>
+            <td>Brasilia</td>
+            <td>Brasil</td>
+            <td>Masculino</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+          <tr>
+            <td> 19 </td>
+            <td> Carolina </td>
+            <td> Martínez </td>
+            <td> 32 </td>
+            <td> Ciudad de México </td>
+            <td> México </ td>
+            <td> Femenino </ td>
+            <td> Sí </td>
+            <td> Sí </td>
+            <td> No </td>
+            <td> Sí </td>
+          </tr>
+
+          <tr>
+            <td>20</td>
+            <td>Sebastián</td>
+            <td>Ortega</td>
+            <td>25</td>
+            <td>Medellín</td>
+            <td>Colombia</td>
+            <td>Masculino</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>Sí</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

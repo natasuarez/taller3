@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guía GitHub ADSO</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f4f6f9;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER / NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-github"></i> Natalia Peña Suarez
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-house"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="forms.html">
+                            <i class="bi bi-file-earmark-text"></i> Formularios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tables.html">
+                            <i class="bi bi-table"></i> Tablas
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-primary rounded-pill">
+                    <i class="bi bi-person-circle"></i> Acceder
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+
+        <!-- HEADER -->
+        <div class="hero mb-4 text-center">
+            <h1><i class="bi bi-github"></i> Guía GitHub ADSO</h1>
+            <p>Aprende paso a paso cómo estructurar y configurar tu proyecto</p>
+        </div>
+
+        <!-- PASO 1 -->
+        <h3 class="mb-3">📁 Estructura del proyecto</h3>
+
+        <div class="card p-4 mb-4">
+            <pre class="mb-0">
+taller3/
+│── app/
+│   ├── forms.html
+│   ├── tables.html
+│   └── github.html
+│
+│── assets/
+│   ├── css/
+│   ├── img/
+│   └── js/
+│
+│── index.html
+│── README.md
+        </pre>
+        </div>
+
+        <h3 class="mb-3 mt-5">📋 Descripción de la estructura</h3>
+
+        <div class="card p-3 mb-5">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Tipo</th>
+                            <th>Descripción</th>
+                            <th>Ubicación</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><strong>taller3/</strong></td>
+                            <td>Carpeta principal</td>
+                            <td>Contiene todos los archivos y recursos del proyecto.</td>
+                            <td>Raíz del proyecto</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>app/</strong></td>
+                            <td>Carpeta</td>
+                            <td>Almacena las páginas secundarias del sitio web.</td>
+                            <td>taller3/app</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>forms.html</strong></td>
+                            <td>Archivo HTML</td>
+                            <td>Página que contiene los formularios de registro e inicio de sesión.</td>
+                            <td>app/forms.html</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>tables.html</strong></td>
+                            <td>Archivo HTML</td>
+                            <td>Página donde se muestran las tablas del proyecto.</td>
+                            <td>app/tables.html</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>github.html</strong></td>
+                            <td>Archivo HTML</td>
+                            <td>Página que explica el uso de Git y GitHub.</td>
+                            <td>app/github.html</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>assets/</strong></td>
+                            <td>Carpeta</td>
+                            <td>Contiene todos los recursos estáticos del proyecto.</td>
+                            <td>taller3/assets</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>css/</strong></td>
+                            <td>Carpeta</td>
+                            <td>Archivos de estilos utilizados para el diseño del sitio.</td>
+                            <td>assets/css</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>img/</strong></td>
+                            <td>Carpeta</td>
+                            <td>Almacena las imágenes utilizadas en la página.</td>
+                            <td>assets/img</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>js/</strong></td>
+                            <td>Carpeta</td>
+                            <td>Contiene los archivos JavaScript y Bootstrap necesarios.</td>
+                            <td>assets/js</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>index.html</strong></td>
+                            <td>Archivo HTML</td>
+                            <td>Página principal del proyecto.</td>
+                            <td>Raíz del proyecto</td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>README.md</strong></td>
+                            <td>Archivo Markdown</td>
+                            <td>Documento con la descripción general del proyecto.</td>
+                            <td>Raíz del proyecto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PASO 2 -->
+        <h3 class="mb-3">⚙️ Requisitos iniciales</h3>
+
+        <div class="card p-4 mb-5">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">✔ Tener cuenta en GitHub</li>
+                <li class="list-group-item">✔ Tener Git instalado</li>
+                <li class="list-group-item">✔ Tener Visual Studio Code</li>
+            </ul>
+        </div>
+
+        <!-- PASO 3 -->
+        <h3 class="mb-3">💻 Configuración de Git</h3>
+
+        <div class="card p-4 mb-5">
+            <p>Abre la terminal en Visual Studio Code:</p>
+
+            <div class="bg-dark text-white p-3 rounded mb-3">
+                git config --global user.name "Tu Nombre"<br>
+                git config --global user.email "tu@email.com"
+            </div>
+
+            <span class="badge bg-primary">Menú → Terminal → New Terminal</span>
+        </div>
+        <!-- TARJETAS EXPLICACIÓN -->
+    <div class="row g-4 mb-5">
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <i class="bi bi-table fs-1 text-primary"></i>
+                <h5>tables.html</h5>
+                <p>Página destinada a tablas.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <i class="bi bi-github fs-1 text-dark"></i>
+                <h5>github.html</h5>
+                <p>Guía de uso de GitHub.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3">
+                <i class="bi bi-file-earmark-text fs-1 text-success"></i>
+                <h5>README.md</h5>
+                <p>Documentación del proyecto.</p>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- NOTA -->
+        <div class="alert alert-info text-center">
+            <strong>Nota:</strong> Esta guía usa Bootstrap para el diseño visual.
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <h5><i class="bi bi-github"></i> Natalia Peña Suárez</h5>
+            <p class="mb-1">Guía GitHub ADSO - Proyecto Bootstrap 5</p>
+            <small>
+                © 2026 Natalia Peña Suárez | ADSO SENA
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
